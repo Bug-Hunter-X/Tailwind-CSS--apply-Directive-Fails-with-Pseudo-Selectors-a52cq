@@ -1,0 +1,37 @@
+/* bugSolution.css */
+
+.button {
+  @apply bg-gray-300 px-4 py-2 rounded text-black;
+}
+
+.button:hover {
+  @apply bg-blue-500 text-white;
+}
+
+/* Responsive styles should be handled separately */
+@media (min-width: 768px) {
+  .button {
+    @apply px-6 py-3;
+  }
+}
+
+/*OR - better alternative without @apply:
+
+.button {
+  background-color: gray;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: black;
+}
+
+.button:hover {
+  background-color: blue;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.75rem 1.5rem;
+  }
+}
+*/
